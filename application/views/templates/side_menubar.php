@@ -57,9 +57,9 @@
                 </span>
               </a>
               <ul class="treeview-menu">
-                <?php if(in_array('createProduct', $user_permission)): ?>
+                <!-- <?php if(in_array('createProduct', $user_permission)): ?>
                   <li id="addProductNav"><a href="<?php echo base_url('Controller_Products/create') ?>"><i class="fa fa-circle-o"></i> Add Stock</a></li>
-                <?php endif; ?>
+                <?php endif; ?> -->
                 <?php if(in_array('updateProduct', $user_permission) || in_array('viewProduct', $user_permission) || in_array('deleteProduct', $user_permission)): ?>
                 <li id="manageProductNav"><a href="<?php echo base_url('Controller_Products') ?>"><i class="fa fa-circle-o"></i> Manage Stocks</a></li>
                 <?php endif; ?>
@@ -68,7 +68,7 @@
           <?php endif; ?>
 
 
-          <?php if(in_array('createOrder', $user_permission) || in_array('updateOrder', $user_permission) || in_array('viewOrder', $user_permission) || in_array('deleteOrder', $user_permission)): ?>
+          <!-- <?php if(in_array('createOrder', $user_permission) || in_array('updateOrder', $user_permission) || in_array('viewOrder', $user_permission) || in_array('deleteOrder', $user_permission)): ?>
             <li class="treeview" id="mainOrdersNav">
               <a href="#">
                 <i class="fa fa-dollar"></i>
@@ -86,7 +86,7 @@
                 <?php endif; ?>
               </ul>
             </li>
-          <?php endif; ?>
+          <?php endif; ?> -->
           <!-- <?php if($user_permission): ?>
           <?php if(in_array('createUser', $user_permission) || in_array('updateUser', $user_permission) || in_array('viewUser', $user_permission) || in_array('deleteUser', $user_permission)): ?>
             <li class="treeview" id="mainUserNav">

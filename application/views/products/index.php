@@ -37,10 +37,10 @@
           </div>
         <?php endif; ?>
 
-        <?php if(in_array('createProduct', $user_permission)): ?>
+        <!-- <?php if(in_array('createProduct', $user_permission)): ?>
           <a href="<?php echo base_url('Controller_Products/create') ?>" class="btn btn-primary">Add Product</a>
           <br /> <br />
-        <?php endif; ?>
+        <?php endif; ?> -->
 
         <div class="box">
          
@@ -50,11 +50,10 @@
               <thead>
               <tr>
                 <th></th>
-                
                 <th>Product Name</th>
                 <th>Price</th>
                 <th>Qty</th>
-                <!-- <th>Warehouse</th> -->
+                <th>Warehouse</th>
                 <th>Availability</th>
                 <?php if(in_array('updateProduct', $user_permission) || in_array('deleteProduct', $user_permission)): ?>
                   <th>Action</th>
@@ -169,7 +168,6 @@ function removeFunc(id)
     });
   }
 }
-
 
 </script>
 <script type="text/javascript" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>

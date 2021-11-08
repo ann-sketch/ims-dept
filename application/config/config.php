@@ -24,7 +24,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 |
 */
 
-$IS_PRODUCTION = true;
+$IS_PRODUCTION = false;
 
 if ($IS_PRODUCTION) {
     $_SERVER['CONFIG_BASE_URL'] = "http://208.113.165.170/ims-dept/";
@@ -50,13 +50,13 @@ if ($IS_PRODUCTION) {
         'save_queries' => TRUE
     );
 } else {
-    $_SERVER['CONFIG_BASE_URL'] = "https://ablgh.com/CIPurchasing/ims-dept/";
+    $_SERVER['CONFIG_BASE_URL'] = "https://ablgh.com/CIPurchasing/ims-dept-old/";
     $_SERVER['CONFIG_IMS_DB'] = array(
         'dsn'    => '',
         'hostname' => 'localhost',
         'username' => 'root',
         'password' => '',
-        'database' => 'ims_db_dept_gh',
+        'database' => 'ims_db_gh',
         'dbdriver' => 'mysqli',
         'dbprefix' => '',
         'pconnect' => FALSE,
