@@ -27,7 +27,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 $IS_PRODUCTION = true;
 
 if ($IS_PRODUCTION) {
-    $_SERVER['CONFIG_BASE_URL'] = "http://208.113.165.170/ims-dept/";
+    $_SERVER['CONFIG_BASE_URL'] = "http://208.113.165.170/ims-dept-old/";
     $_SERVER['CONFIG_IMS_DB'] = array(
         'dsn'    => '',
         'hostname' => 'mysql.cannabinoidsheal.com',
