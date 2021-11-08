@@ -9,7 +9,6 @@
   <section class="content-header">
     <h1>
       Manage Stocks
-
     </h1>
     <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -53,7 +52,7 @@
                 <th>Product Name</th>
                 <th>Price</th>
                 <th>Qty</th>
-                <!-- <th>Warehouse</th> -->
+                <th>Warehouse</th>
                 <th>Availability</th>
                 <?php if(in_array('updateProduct', $user_permission) || in_array('deleteProduct', $user_permission)): ?>
                   <th>Action</th>
